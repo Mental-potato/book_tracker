@@ -1,2 +1,114 @@
 book tracker
-MAL style
+MAL style🗺️ Phase 1: Project Setup
+✅ Goals:
+Init project repo
+
+Basic frontend/backend communication
+
+Deploy basic project to Render
+
+📌 Tasks:
+ Create monorepo or separate frontend/backend folders
+
+ Initialize NPM + install base dependencies
+
+ Setup TypeScript config
+
+ Setup Express server + test route
+
+ Setup basic React frontend with Vite or Next.js
+
+ Deploy backend & frontend to Render with simple "Hello world"
+
+🚪 Phase 2: Authentication
+✅ Goals:
+User signup/login
+
+JWT token-based auth
+
+Protect routes for logged-in users
+
+📌 Tasks:
+ Setup PostgreSQL (Render has built-in support)
+
+ Create User model: id, email, username, passwordHash, createdAt
+
+ Auth routes: /register, /login, /me
+
+ Use JWT for login sessions
+
+ Connect frontend login/register forms to backend
+
+ Add frontend auth context
+
+📚 Phase 3: Book Management
+✅ Goals:
+Display all books
+
+Users can add books to their list (read, want to read, etc.)
+
+Users can publish lists
+
+📌 Tasks:
+ Book model: title, author, description, genres, tags, coverImage, publishedAt, etc.
+
+ UserBookList model: userId, bookId, status, isPublic
+
+ CRUD endpoints: GET /books, POST /books, GET /user/:id/list, etc.
+
+ Frontend book feed page
+
+ Personal book list page
+
+⭐ Phase 4: Reviews and Ratings
+✅ Goals:
+Users can rate/review books
+
+Reviews are visible to others
+
+📌 Tasks:
+ Review model: userId, bookId, rating, reviewText, createdAt
+
+ Endpoint: POST /books/:id/review, GET /books/:id/reviews
+
+ Display reviews and average rating on book page
+
+ Frontend: Write + read reviews UI
+
+🔍 Phase 5: Search and Filters
+✅ Goals:
+Search bar and filters by genre, tag, author, popularity
+
+📌 Tasks:
+ Backend: GET /search?query=...&genre=...&author=...
+
+ Add indexes to your DB for faster queries
+
+ Frontend: search input, filter dropdowns, result list
+
+🌍 Phase 6: Polish & Deploy
+✅ Goals:
+Make it beautiful, smooth, and fully deployed
+
+📌 Tasks:
+ Mobile-friendly layout
+
+ Loading states, error messages, validation
+
+ 404 / Not Found pages
+
+ Final deployment to Render (frontend + backend)
+
+ README with setup instructions
+
+🚀 Bonus Features (Future Ideas)
+Follow other users / see their lists
+
+Book recommendations based on reviews
+
+Notifications (new reviews on books you read)
+
+OAuth login (Google, GitHub, etc.)
+
+Dark mode toggle 🌙
+
